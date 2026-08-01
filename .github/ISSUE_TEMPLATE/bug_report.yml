@@ -1,0 +1,31 @@
+name: Bug report
+description: Something is broken
+labels: ["bug", "needs-triage"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, and what happened instead of what you expected.
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: Which screen or address.
+  - type: dropdown
+    id: severity
+    attributes:
+      label: How bad is it
+      options:
+        - Blocking — cannot work
+        - Painful — there is a workaround
+        - Minor — cosmetic or rare
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: If this came from an in-app report, its ID. Leave blank otherwise.
