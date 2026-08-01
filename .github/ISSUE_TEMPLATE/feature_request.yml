@@ -1,0 +1,28 @@
+name: Feature request
+description: Something the product should do
+labels: ["feature", "needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to do that is hard or impossible today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Optional. Leave blank if you only know the problem.
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: >
+        If promoted from an in-app request, its ID and vote count.
+        Leave blank otherwise.
+  - type: input
+    id: who
+    attributes:
+      label: Who wants this
+      description: Which users or clients. Paying clients carry more weight than vote count.
